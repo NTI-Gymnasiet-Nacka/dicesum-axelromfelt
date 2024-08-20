@@ -18,7 +18,7 @@ def main():
             top_num = [i+1]
         elif x == results.count(i+1):
             top_num.append(i+1)
-    for i in range(top_num):
+    for i in range(len(top_num)):
         print(top_num[i])
 
 
