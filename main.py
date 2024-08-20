@@ -9,8 +9,16 @@ def main():
     results = []
     for i in range(user_input[0]):
         for j in range(user_input[1]):
-            results.append(i+j)
-    print(results)
+            results.append(i+j+2)
+    x = 0
+    top_num = []
+    for i in range(user_input[0]*user_input[1]):
+        if x < results.count(i+1):
+            x = results.count(i+1)
+            top_num = [i+1]
+        elif x == results.count(i+1):
+            top_num.append(i+1)
+    print(top_num)
 
 
 if __name__ == "__main__":
